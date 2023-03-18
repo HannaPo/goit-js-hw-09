@@ -16,3 +16,105 @@ img {
   display: block;
   max-width: 100%;
 }
+
+#datetime-picker {
+  width: 23vw;
+  height: 5vmin;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 20px;
+  left: 45%;
+  color: #414b54;
+  align-items: center;
+  background-color: #f3f7f8;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  cursor: pointer;
+  height: 48px;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  font-size: 18px;
+}
+
+.start-btn {
+  transform: translate(-50%, -50%);
+  top: 20px;
+  left: 40%;
+  align-items: center;
+  appearance: none;
+  background-color: #f3f7f8;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395a;
+  cursor: pointer;
+  height: 48px;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  font-size: 18px;
+}
+
+.start-btn:focus {
+  box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+}
+
+.start-btn:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+}
+
+.start-btn:active {
+  box-shadow: #d6d6e7 0 3px 7px inset;
+}
+
+.timer {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: 70vw;
+  height: 28vmin;
+}
+
+.field {
+  width: 28vmin;
+  height: 28vmin;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.5);
+}
+
+span.value {
+  background-color: #f3f7f8;
+  color: #414b54;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  font-weight: 600;
+  font-size: 5em;
+}
+
+span.label {
+  font-size: 1.2em;
+  background-color: #8496a2;
+  color: #eff0eb;
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 0.5em 0;
+  font-weight: 400;
+}
