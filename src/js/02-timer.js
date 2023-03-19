@@ -33,6 +33,7 @@ btnStart.addEventListener('click', () => {
   timerId = setInterval(() => {
     let countdown = new Date(datePicker.value) - new Date();
     btnStart.disabled = true;
+    datePicker.disabled = true;
 
     if (countdown >= 0) {
       let timeData = convertMs(countdown);
@@ -45,6 +46,7 @@ btnStart.addEventListener('click', () => {
       Notiflix.Notify.success('Finished');
       clearInterval(timerId);
       btnStart.disabled = false;
+      datePicker.disabled = false;
     }
   }, INTERVAL);
 });
